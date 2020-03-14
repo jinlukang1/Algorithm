@@ -6,7 +6,7 @@
 
 **SQL类题目**：[目录](SQL/README.md)
 
-主要来源：[LeetCode高频数据库类题目](https://leetcode-cn.com/problemset/database/)
+题目主要来源：[LeetCode高频数据库类题目](https://leetcode-cn.com/problemset/database/)
 
 ---
 
@@ -18,7 +18,9 @@
 
 **链表类题目**：[目录](链表/README.md)
 
-主要来源：[LeetCode热题HOT100](https://leetcode-cn.com/problemset/hot-100/)
+算法刷题Cpp常用语法：[Cpp](Cpp.md)
+
+题目主要来源：[LeetCode热题HOT100](https://leetcode-cn.com/problemset/hot-100/)
 
 ---
 
