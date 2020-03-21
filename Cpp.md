@@ -27,7 +27,7 @@ mapStudent.erase(666)//删除元素
 iter = mapStudent.find(1);
 if(iter != mapStudent.end()) Cout<<"Find, the value is "<<iter->second<<endl;//它返回的一个迭代器，当数据出现时，它返回数据所在位置的迭代器，如果map中没有要查找的数据，它返回的迭代器等于end函数返回的迭代器
 
-mapStudent.find(666);//如果存在返回1，不存在返回0
+mapStudent.count(666);//如果存在返回1，不存在返回0
 
 for(iter=maps.begin();iter!=maps.end();iter++){
     cout << iter->first;//前面的结构体
