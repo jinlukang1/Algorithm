@@ -12,6 +12,8 @@ map
 #include <map>
 map<int, string> mapStudent;//容器初始化
 
+map<string, int> counts;//对于任意的新string，其初始化int值均为0；
+
 mapStudent.size();//容器目前大小
 
 maoStudent[666] = 'Example'//插入方式1
