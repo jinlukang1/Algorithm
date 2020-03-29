@@ -27,7 +27,7 @@ mapStudent.at(666)//会进行关键字检查，无对应值会报错
 mapStudent.erase(666)//删除元素
 
 iter = mapStudent.find(1);
-if(iter != mapStudent.end()) Cout<<"Find, the value is "<<iter->second<<endl;//它返回的一个迭代器，当数据出现时，它返回数据所在位置的迭代器，如果map中没有要查找的数据，它返回的迭代器等于end函数返回的迭代器
+if(iter != mapStudent.end()) Cout<<"Find, the value is "<<iter->second<<endl;//它返回的一个迭代器，当数据出现时，它返回数据所在位置的迭代器，如果map中没有要查找的数据，它返回的迭代器等于end函数返回的迭代器!!!
 
 mapStudent.count(666);//如果存在返回1，不存在返回0
 
@@ -79,6 +79,8 @@ bool Comp(const int &a,const int &b){
     return a>b;
 }
 sort(vec.begin(),vec.end(),Comp);//这样就降序排序。
+
+vector<vector<int> > newOne(r, vector<int>(c, 0));//r行c列向量初始化
 ```
 
 ---
