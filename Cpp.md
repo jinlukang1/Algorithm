@@ -81,6 +81,8 @@ bool Comp(const int &a,const int &b){
 sort(vec.begin(),vec.end(),Comp);//这样就降序排序。
 
 vector<vector<int> > newOne(r, vector<int>(c, 0));//r行c列向量初始化
+
+find(vec.begin(), vec.end(), 6) = vec.end();//vec查找，需要algorirhm库
 ```
 
 ---
