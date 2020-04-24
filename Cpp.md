@@ -145,8 +145,9 @@ stack
 
 ```C++
 stack<char> st;//初始化
-stark.push();//入栈
-stark.pop();//出栈
+stack.push();//入栈
+stack.pop();//出栈
+stack.empty();//是否空栈
 ```
 
 ---
