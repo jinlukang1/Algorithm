@@ -4,7 +4,7 @@
 
 ## 常见数据结构
 
-map
+### map
 
 主要用法，相同的还有unordered_map，包含在对应头文件中，映射内容不排序，查找速度相对快一些。map的映射是会自动排序的。
 
@@ -40,7 +40,7 @@ for(iter=maps.begin();iter!=maps.end();iter++){
 
 ---
 
-vector
+### vector
 
 主要用法
 
@@ -92,7 +92,7 @@ find(vec.begin(), vec.end(), 6) = vec.end();
 
 ---
 
-string
+### string
 
 主要用法
 
@@ -122,7 +122,7 @@ found = str.find(str2);//待测试
 
 ---
 
-set
+### set
 
 主要用法
 
@@ -139,7 +139,7 @@ rend()//返回的值和rbegin()相同
 
 ---
 
-stack
+### stack
 
 主要用法
 
@@ -152,7 +152,37 @@ stack.empty();//是否空栈
 
 ---
 
-queue
+### C++使用堆的两种方法
+
+堆是一棵完全二叉树，两种方法的时间复杂度差不多，第一种方法是使用algorithm里面中的heap函数，需要建立在vector之上。
+
+```C++
+vector<int> v1{6, 1, 2, 5, 3, 4};
+make_heap(v1.begin(), v1.end());//维护一个最大堆
+make_heap(v1.begin(), v1.end(, greater<int>());//维护一个最小堆，如果是最小堆，那么在后面的pop和push，都需要加上这个greater函数。
+
+v1.push_back(200);
+push_heap(v1.begin(), v1.end());
+pop_heap(v1.begin(), v1.end());
+
+auto largest = v1.back();
+psln(largest);
+v1.pop_back();//弹出，可以用来维护堆的大小
+```
+
+第二种方法是利用最大优先队列，其实就是维护的一个最大堆或者最小堆
+
+```C++
+#include<queue>
+priority_queue<int> p;//最大堆
+priority_queue<int, vector<int>, greater<int> > p;//最小堆
+p.push();
+p.pop();
+p.top();//堆顶
+p.size();
+```
+
+### queue
 
 主要用法
 
@@ -168,7 +198,7 @@ size() //返回队列中元素的个数
 
 ---
 
-C++输入
+### C++输入
 
 ```C++
 //多种输入方式
@@ -184,7 +214,7 @@ getchar();
 getchar()=='\n';//可以用来判断是否输入回车，用来跳出输入循环，并且记得放在cin后面，否则会丢失一个字符。
 ```
 
-python输入
+### python输入
 
 主要是通过先读入，再进行切割处理。
 
