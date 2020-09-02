@@ -26,7 +26,10 @@
 
 这部分的题解，由于解法以及思路很多元化，主要记录在每一个子目录指向的题目中。
 
-题目主要来源：[LeetCode热题HOT100](https://leetcode-cn.com/problemset/hot-100/)
+题目主要来源：
+[LeetCode热题HOT100](https://leetcode-cn.com/problemset/hot-100/)
+
+[LeetCode精选TOP面试题](https://leetcode-cn.com/problemset/leetcode-top/)
 
 ---
 
@@ -34,6 +37,6 @@
 
 语言只是工具，具体的解决问题的思路才是宝贵的。欢迎交流！
 
-QQ 330130276 备注 github
+QQ 330130276 备注 Algorithm
 
 ![LeetCode](LeetCode.jpeg)
