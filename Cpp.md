@@ -127,6 +127,7 @@ found = str.find(str2);//待测试
 主要用法
 
 ```C++
+insert()//插入元素
 begin()//返回set容器的第一个元素
 end()//返回set容器的最后一个元素
 clear()//删除set容器中的所有的元素
@@ -224,4 +225,20 @@ a = input()
 # 多行输入
 import sys
 lines=sys.stdin.readlines()
+```
+
+### python堆栈的实现
+
+```py
+# 堆操作
+import heapq
+h = [1, 2, 3, 4, 5, 8, 7, 6]
+heapq.heapify(h) # 将列表转换为堆
+heapq.heappop(h) # 删除最小值
+heapq.heappush(h, 2) # 在堆中添加元素
+
+# 栈操作
+s = [] # 其实这个就可以作为栈使用
+s.append(1) # 末尾添加一个数字
+s.pop() # 弹出默认就是最后一个
 ```
